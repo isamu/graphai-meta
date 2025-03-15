@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "ai": "ts-node src/index.ts ",
+    "en": "ts-node src/indexen.ts ",
     "build": "tsc && tsc-alias",
     "eslint": "eslint src --fix",
     "format": "prettier --write '{src,tests}/**/*.ts'",

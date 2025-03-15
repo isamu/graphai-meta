@@ -7,3 +7,8 @@ yarn install
 OPENAI_API_KEY=skxxx
 
 yarn run ai
+(Use a system prompt written in Japanese.)
+or
+
+yarn run en
+(Use a system prompt written in English.)
