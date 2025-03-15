@@ -573,6 +573,10 @@ In addition, provide **mock functions** that consider the input and output of ea
 Now, generate **GraphData** from the given Python code along with the necessary functions.
 
 `
+// TODO
+// Support nestagent and loop
+// Human loop (textAgent)
+// Run Graph Validation
 
 import { GraphData } from "graphai";
 export const graphMeta: GraphData = {

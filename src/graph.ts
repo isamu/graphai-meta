@@ -551,6 +551,10 @@ const node1Agent = ({namedInput: {text: message}, params: { model: "test"}}) => 
 もし下のプログラミングにループがある場合は、どこでどういうループをするか文章で教えて下さい。
 
 `
+// TODO
+// Support nestagent and loop
+// Human loop (textAgent)
+// Run Graph Validation
 
 import { GraphData } from "graphai";
 export const graphMeta: GraphData = {
