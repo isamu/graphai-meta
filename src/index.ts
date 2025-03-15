@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 import * as agents from "@graphai/vanilla";
-import { openAIAgent } from "@graphai/openai_agent";
+import { openAIAgent, anthropicAgent } from "@graphai/llm_agents";
 import { GraphAI } from "graphai/lib/index";
 
 import { graphMeta } from "./graph";
@@ -12,6 +12,7 @@ const run = async () => {
     {
       ...agents,
       openAIAgent,
+      anthropicAgent,
     },
   );
   const result = await graph.run<{text: string}>();
