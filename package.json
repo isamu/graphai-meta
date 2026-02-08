@@ -10,8 +10,9 @@
     "ai": "ts-node src/index.ts ",
     "en": "ts-node src/indexen.ts ",
     "build": "tsc && tsc-alias",
+    "lint": "eslint src",
     "eslint": "eslint src --fix",
-    "format": "prettier --write '{src,tests}/**/*.ts'",
+    "format": "prettier --write {src,tests}/**/*.ts",
     "test": "node --test --require ts-node/register ./tests/test_*.ts"
   },
   "repository": {

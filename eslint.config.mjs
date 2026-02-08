@@ -33,4 +33,7 @@ export default [
       semi: ["error", "always"],
     },
   },
+  {
+    ignores: ["src/graphen.ts", "src/hoge.ts", "src/**/*~"],
+  },
 ];

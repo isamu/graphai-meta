@@ -137,7 +137,7 @@ const node1Agent = ({namedInput: {text: message}, params: { model: "test"}}) => 
 モック関数の、もし中身が実装可能ならモックではなく普通の関数を書いてください
 
 
-`
+`;
 // TODO
 // Support nestagent and loop
 // Human loop (textAgent)
