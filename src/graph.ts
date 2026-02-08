@@ -3,7 +3,7 @@ import { system } from "./prompts";
 
 import { GraphData } from "graphai";
 
-const claude = {
+const __claude = {
   agent: "anthropicAgent",
   params: {
     stream: true,

@@ -1,5 +1,5 @@
 // https://github.com/langchain-ai/open_deep_research/blob/main/src/open_deep_research/graph.py
-export const python  = `
+export const python = `
 from typing import Literal
 
 from langchain.chat_models import init_chat_model
