@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ quiet: true });
 
 import * as agents from "@graphai/vanilla";
 import { openAIAgent, anthropicAgent } from "@graphai/llm_agents";
