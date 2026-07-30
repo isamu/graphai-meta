@@ -10,6 +10,7 @@
     "ai": "ts-node src/index.ts ",
     "en": "ts-node src/indexen.ts ",
     "build": "tsc && tsc-alias",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint src",
     "eslint": "eslint src --fix",
     "format": "prettier --write {src,tests}/**/*.ts",
@@ -27,24 +28,24 @@
   "homepage": "https://github.com/isamu/ts-template#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^26.1.1",
+    "@types/node": "^26.1.2",
     "dotenv": "^17.2.4",
-    "eslint": "^10.0.0",
-    "globals": "^17.7.0",
+    "eslint": "^10.8.0",
+    "globals": "^17.8.0",
     "prettier": "^3.8.5",
     "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.11",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "6.0.3",
-    "typescript-eslint": "^8.54.0"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.65.0"
   },
   "types": "./lib/index.d.ts",
   "directories": {
     "lib": "lib"
   },
   "dependencies": {
-    "@graphai/llm_agents": "^1.0.2",
-    "@graphai/vanilla": "^1.0.9",
-    "graphai": "^1.0.2"
+    "@graphai/llm_agents": "^2.0.14",
+    "@graphai/vanilla": "^2.0.12",
+    "graphai": "^2.0.18"
   }
 }
