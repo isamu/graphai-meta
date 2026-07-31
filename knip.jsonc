@@ -1,0 +1,26 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  // knip auto-detects both runnable entries from the package.json scripts that launch them
+  // (`ai` -> src/index.ts, `en` -> src/indexen.ts), so neither is listed here; listing indexen.ts
+  // produced a "redundant entry" hint. Every tests/*.ts is a standalone node --test target, so
+  // those are the explicit entry points and src/** is the analyzed project.
+  "entry": ["tests/**/*.ts"],
+  "project": ["src/**/*.ts"],
+  "ignoreExportsUsedInFile": true,
+  "includeEntryExports": false,
+  "rules": {
+    // Warn mode: every rule is "warn" (reported, exit 0) or "off". Nothing gates CI here.
+    "files": "warn",
+    "dependencies": "warn",
+    "devDependencies": "warn",
+    "unlisted": "warn",
+    "exports": "warn",
+    "types": "warn",
+    "unresolved": "off",
+    "binaries": "off",
+    "nsExports": "off",
+    "nsTypes": "off",
+    "enumMembers": "off",
+    "duplicates": "off",
+  },
+}
